@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNet.WebApi", "Samples\AS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure_FunctionApp", "Samples\Azure.FunctionApp\Azure_FunctionApp.csproj", "{71192CC7-09ED-450F-A1D7-8BB1C19BF418}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Azure.WebJobs.Extensions.Health", "Microsoft.Azure.WebJobs.Extensions.Health\Microsoft.Azure.WebJobs.Extensions.Health.csproj", "{8648CA92-047A-46EC-8104-F56F8AE4160E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{71192CC7-09ED-450F-A1D7-8BB1C19BF418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71192CC7-09ED-450F-A1D7-8BB1C19BF418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71192CC7-09ED-450F-A1D7-8BB1C19BF418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89C0C093-E62A-47FC-81F8-F9C3C413555D} = {3AA30D56-9DF9-40CE-810C-37F689D994C1}
