@@ -1,9 +1,12 @@
 using System;
+using System.Text.Json.Serialization;
+using WeatherForecast.Shared.JsonConverters;
 
-namespace Azure.FunctionApp;
+namespace WeatherForecast.Shared;
 
 public class WeatherForecast
 {
+    [JsonConverter(typeof(DateOnlyJsonConverter))]
     public DateOnly Date { get; set; }
 
     public int TemperatureC { get; set; }

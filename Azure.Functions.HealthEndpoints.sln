@@ -7,9 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3AA3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNet.WebApi", "Samples\ASPNet.WebApi\ASPNet.WebApi.csproj", "{89C0C093-E62A-47FC-81F8-F9C3C413555D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure_FunctionApp", "Samples\Azure.FunctionApp\Azure_FunctionApp.csproj", "{71192CC7-09ED-450F-A1D7-8BB1C19BF418}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Azure.WebJobs.Extensions.Health", "Microsoft.Azure.WebJobs.Extensions.Health\Microsoft.Azure.WebJobs.Extensions.Health.csproj", "{8648CA92-047A-46EC-8104-F56F8AE4160E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.FunctionApp.InProcess", "Samples\Azure.FunctionApp.InProc\Azure.FunctionApp.InProcess.csproj", "{82BCF34D-F089-4F05-998B-5D96DC2D41A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.FunctionApp.OutOfProc", "Samples\Azure.FunctionApp.OutOfProc\Azure.FunctionApp.OutOfProc.csproj", "{9E47A738-729C-404A-8C68-A807D8784BB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Shared", "Samples\WeatherForecast.Shared\WeatherForecast.Shared.csproj", "{05F39583-A142-4AED-AAFE-4BC2B8E75525}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,17 +28,27 @@ Global
 		{89C0C093-E62A-47FC-81F8-F9C3C413555D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89C0C093-E62A-47FC-81F8-F9C3C413555D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89C0C093-E62A-47FC-81F8-F9C3C413555D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71192CC7-09ED-450F-A1D7-8BB1C19BF418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71192CC7-09ED-450F-A1D7-8BB1C19BF418}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71192CC7-09ED-450F-A1D7-8BB1C19BF418}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71192CC7-09ED-450F-A1D7-8BB1C19BF418}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8648CA92-047A-46EC-8104-F56F8AE4160E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BCF34D-F089-4F05-998B-5D96DC2D41A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BCF34D-F089-4F05-998B-5D96DC2D41A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BCF34D-F089-4F05-998B-5D96DC2D41A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BCF34D-F089-4F05-998B-5D96DC2D41A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E47A738-729C-404A-8C68-A807D8784BB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E47A738-729C-404A-8C68-A807D8784BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E47A738-729C-404A-8C68-A807D8784BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E47A738-729C-404A-8C68-A807D8784BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F39583-A142-4AED-AAFE-4BC2B8E75525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F39583-A142-4AED-AAFE-4BC2B8E75525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F39583-A142-4AED-AAFE-4BC2B8E75525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F39583-A142-4AED-AAFE-4BC2B8E75525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89C0C093-E62A-47FC-81F8-F9C3C413555D} = {3AA30D56-9DF9-40CE-810C-37F689D994C1}
-		{71192CC7-09ED-450F-A1D7-8BB1C19BF418} = {3AA30D56-9DF9-40CE-810C-37F689D994C1}
+		{82BCF34D-F089-4F05-998B-5D96DC2D41A9} = {3AA30D56-9DF9-40CE-810C-37F689D994C1}
+		{9E47A738-729C-404A-8C68-A807D8784BB3} = {3AA30D56-9DF9-40CE-810C-37F689D994C1}
+		{05F39583-A142-4AED-AAFE-4BC2B8E75525} = {3AA30D56-9DF9-40CE-810C-37F689D994C1}
 	EndGlobalSection
 EndGlobal

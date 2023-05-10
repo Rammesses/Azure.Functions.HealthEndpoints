@@ -1,0 +1,8 @@
+{
+    "azureFunctions.projectSubpath": "Samples/Azure.FunctionApp.InProc",
+    "azureFunctions.deploySubpath": "Samples/Azure.FunctionApp.InProc/bin/Release/net6.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)"
+}

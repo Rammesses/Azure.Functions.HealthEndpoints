@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Azure_FunctionApp_OutOfProc": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7015",
+      "launchBrowser": false
+    }
+  }
+}
