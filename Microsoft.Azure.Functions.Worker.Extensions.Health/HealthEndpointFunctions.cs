@@ -24,7 +24,10 @@ public class HealthEndpointFunctions : IHealthEndpointFunctions
         this._context = context ?? throw new ArgumentNullException(nameof(context));
     }
 
-    public async Task<HttpResponseData> GetHealth(HttpRequestData req, FunctionContext ctx)
+    [Function(HealthFunctionName)]
+    public async Task<HttpResponseData> GetHealth(
+        [HttpTrigger(AuthorizationLevel.Anonymous, "GET", Route = "health")] HttpRequestData req, 
+        FunctionContext ctx)
     {
         // TODO: Get the health check result
         var result = @"healthy";

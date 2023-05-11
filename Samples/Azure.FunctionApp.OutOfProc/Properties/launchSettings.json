@@ -2,8 +2,9 @@
   "profiles": {
     "Azure_FunctionApp_OutOfProc": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7015",
-      "launchBrowser": false
+      "commandLineArgs": "--port 7015 --verbose",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:7015/api/weatherforecast"
     }
   }
 }

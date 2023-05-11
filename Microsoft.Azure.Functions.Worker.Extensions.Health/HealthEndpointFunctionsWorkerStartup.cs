@@ -13,6 +13,6 @@ public class HealthEndpointFunctionsWorkerStartup : WorkerExtensionStartup
         // applicationBuilder.Services.AddSingleton(settings);
 
         applicationBuilder.Services.AddSingleton<IHealthEndpointHttpTriggerContext, HealthEndpointHttpTriggerContext>();
-        applicationBuilder.Services.AddSingleton<IHealthEndpointFunctions, HealthEndpointFunctions>();
+        //applicationBuilder.Services.AddSingleton<IHealthEndpointFunctions, HealthEndpointFunctions>();
     }
 }
