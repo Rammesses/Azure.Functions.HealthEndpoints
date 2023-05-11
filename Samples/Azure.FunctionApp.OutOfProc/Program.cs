@@ -6,7 +6,7 @@ using WeatherForecast.Shared;
 var host = new HostBuilder()
     .ConfigureFunctionsWorkerDefaults()
     .ConfigureServices(services => {
-        services.AddSingleton<WeatherForecastService>();
+        services.AddWeatherForecast();
     })
     .Build();
 

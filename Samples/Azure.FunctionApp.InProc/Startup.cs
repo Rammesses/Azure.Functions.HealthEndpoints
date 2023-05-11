@@ -1,8 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
-
-using Microsoft.Azure.Functions.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 
 using WeatherForecast.Shared;
 
@@ -14,7 +10,7 @@ public class Startup : FunctionsStartup
 {
     public override void Configure(IFunctionsHostBuilder builder)
     {
-        builder.Services.AddSingleton<WeatherForecastService>();
+        builder.Services.AddWeatherForecast();
     }
 }
 

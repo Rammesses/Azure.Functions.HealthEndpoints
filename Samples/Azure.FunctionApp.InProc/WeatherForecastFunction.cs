@@ -18,10 +18,10 @@ namespace Azure.FunctionApp
 {
     public class WeatherForecastFunction
     {
-        private readonly WeatherForecastService _forecastService;
+        private readonly IWeatherForecastService _forecastService;
 
         public WeatherForecastFunction(
-            WeatherForecastService forecastService)
+            IWeatherForecastService forecastService)
         {
             _forecastService = forecastService ?? throw new ArgumentNullException(nameof(forecastService)); ;
         }
@@ -34,7 +34,7 @@ namespace Azure.FunctionApp
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
-            var forecast = _forecastService.Get();
+            var forecast = _forecastService.Get(5);
             var response = (IActionResult)new OkObjectResult(forecast);
             return Task.FromResult(response);
         }
