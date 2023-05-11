@@ -1,14 +1,21 @@
 ﻿namespace WeatherForecast.Shared;
 
-public class WeatherForecastService
+public interface IWeatherForecastService
 {
-    public static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+    IEnumerable<WeatherForecast> Get(int days = 1);
+}
 
-    public IEnumerable<WeatherForecast> Get() => 
-        Enumerable.Range(1, 5).Select(index => new WeatherForecast
+public enum ForecastSummaries
+{
+    Freezing, Bracing, Chilly, Cool, Mild, Warm, Balmy, Hot, Sweltering, Scorching
+}
+
+public class WeatherForecastService : IWeatherForecastService
+{
+    public static readonly string[] Summaries = Enum.GetNames<ForecastSummaries>();
+
+    public IEnumerable<WeatherForecast> Get(int days = 1) => 
+        Enumerable.Range(1, days).Select(index => new WeatherForecast
         {
             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             TemperatureC = Random.Shared.Next(-20, 55),

@@ -7,11 +7,11 @@ namespace ASPNet.WebApi.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private readonly WeatherForecastService _forecastService;
+    private readonly IWeatherForecastService _forecastService;
     private readonly ILogger<WeatherForecastController> _logger;
 
     public WeatherForecastController(
-        WeatherForecastService forecastService,
+        IWeatherForecastService forecastService,
         ILogger<WeatherForecastController> logger)
     {
         _forecastService = forecastService ?? throw new ArgumentNullException(nameof(forecastService));
@@ -20,5 +20,5 @@ public class WeatherForecastController : ControllerBase
 
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast.Shared.WeatherForecast> Get() =>
-        _forecastService.Get();
+        _forecastService.Get(5);
 }

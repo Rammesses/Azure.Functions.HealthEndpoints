@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// register our shared service
-builder.Services.AddSingleton<WeatherForecastService>();
+// register our shared services
+builder.Services.AddWeatherForecast();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
