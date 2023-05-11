@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.FunctionApp.OutOfProc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Shared", "Samples\WeatherForecast.Shared\WeatherForecast.Shared.csproj", "{05F39583-A142-4AED-AAFE-4BC2B8E75525}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Azure.Functions.Worker.Extensions.Health", "Microsoft.Azure.Functions.Worker.Extensions.Health\Microsoft.Azure.Functions.Worker.Extensions.Health.csproj", "{63E6247A-42E9-4F56-8927-4E2FBAD69C24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{05F39583-A142-4AED-AAFE-4BC2B8E75525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05F39583-A142-4AED-AAFE-4BC2B8E75525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05F39583-A142-4AED-AAFE-4BC2B8E75525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E6247A-42E9-4F56-8927-4E2FBAD69C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E6247A-42E9-4F56-8927-4E2FBAD69C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E6247A-42E9-4F56-8927-4E2FBAD69C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E6247A-42E9-4F56-8927-4E2FBAD69C24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89C0C093-E62A-47FC-81F8-F9C3C413555D} = {3AA30D56-9DF9-40CE-810C-37F689D994C1}

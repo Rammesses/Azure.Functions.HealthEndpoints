@@ -3,30 +3,29 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Microsoft.Azure.WebJobs.Extensions.Health
+namespace Microsoft.Azure.WebJobs.Extensions.Health;
+
+public class HealthEndpointTriggerFunctions
 {
-    public class HealthEndpointTriggerFunctions
+    public const string HealthFunctionName = "health";
+
+    public static Task<IActionResult> RenderHealthDocument(
+        [HealthEndpointHttpTriggerContext] HealthEndpointHttpTriggerContext healthEndpointContext,
+        HttpRequest req,
+        ExecutionContext ctx,
+        ILogger log)
     {
-        public const string HealthFunctionName = "health";
+        log.LogInformation($"health status was requested.");
 
-        public static Task<IActionResult> RenderHealthDocument(
-            [HealthEndpointHttpTriggerContext] HealthEndpointHttpTriggerContext healthEndpointContext,
-            HttpRequest req,
-            ExecutionContext ctx,
-            ILogger log)
+        // TODO: Get the health check result
+
+        var content = new ContentResult()
         {
-            log.LogInformation($"health status was requested.");
+            Content = "Healthy",
+            ContentType = "text/json",
+            StatusCode = (int)HttpStatusCode.OK,
+        };
 
-            // TODO: Get the health check result
-
-            var content = new ContentResult()
-            {
-                Content = "Healthy",
-                ContentType = "text/json",
-                StatusCode = (int)HttpStatusCode.OK,
-            };
-
-            return Task.FromResult((IActionResult)content);
-        }
+        return Task.FromResult((IActionResult)content);
     }
 }

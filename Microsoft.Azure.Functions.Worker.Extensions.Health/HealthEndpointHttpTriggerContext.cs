@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Azure.WebJobs.Extensions.Health;
+﻿namespace Microsoft.Azure.Functions.Worker.Extensions.Health;
 
 public interface IHealthEndpointHttpTriggerContext
 {
